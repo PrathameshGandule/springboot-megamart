@@ -1,8 +1,24 @@
 # SPRINGBOOT MEGAMART
 - Stateless JWT for authentication
+  - Signin using email, password
 - Product service
-- Order service
+  - Add product
+  - Update product
+  - Delete product
+  - Get a product
+  - Get all products
 - Cart service
+  - Add a product to cart
+  - Remove product from cart
+  - Update a product's quantity in cart
+  - Get whole cart
+- Order service
+  - Place order based on products in cart
+  - Get your orders
+- Wishlist
+  - Add product to wishlist
+  - Remove product from wishlist
+  - Get your wishlist products
 
 ## Use following collection for api testing
 - <a href="./collections/megamart_bruno_collection.json">Bruno Collection</a><br>
