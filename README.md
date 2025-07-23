@@ -4,8 +4,8 @@
 - Order service
 - Cart service
 
-## Download following collection for checking api testing
-<a href="./assets/megamart_bruno_collection.json" download="megamart_bruno.json">Download Bruno Collection</a> 
-<a href="./assets/megamart_postman_collection.json" download="megamart_postman.json">Download Postman Collection</a>
+## Use following collection for api testing
+- <a href="./assets/megamart_bruno_collection.json">Bruno Collection</a><br>
+- <a href="./assets/megamart_postman_collection.json" download="megamart_postman.json">Postman Collection</a>
 
 ### Just import above collection in your desired api client and start using it! 
