@@ -1,0 +1,525 @@
+{
+  "name": "megamart",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "add to cart 2",
+      "filename": "add to cart 2.bru",
+      "seq": 11,
+      "request": {
+        "url": "http://localhost:8082/api/carts",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "add to cart",
+      "filename": "add to cart.bru",
+      "seq": 9,
+      "request": {
+        "url": "http://localhost:8082/api/carts",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"productId\": 1,\n  \"quantity\": 2\n}",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "add to wishlist",
+      "filename": "add to wishlist.bru",
+      "seq": 17,
+      "request": {
+        "url": "http://localhost:8082/api/wishlist/1",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "all products",
+      "filename": "all products.bru",
+      "seq": 6,
+      "request": {
+        "url": "http://localhost:8082/api/products/all",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "delete from wishlist",
+      "filename": "delete from wishlist.bru",
+      "seq": 18,
+      "request": {
+        "url": "http://localhost:8082/api/wishlist/1",
+        "method": "DELETE",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "delete product by id",
+      "filename": "delete product by id.bru",
+      "seq": 14,
+      "request": {
+        "url": "http://localhost:8082/api/carts/1",
+        "method": "DELETE",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "error register user",
+      "filename": "error register user.bru",
+      "seq": 1,
+      "request": {
+        "url": "{{BASE_URL}}/auth/register",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"firstName\": \"prathamesh\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get orders",
+      "filename": "get orders.bru",
+      "seq": 16,
+      "request": {
+        "url": "http://localhost:8082/api/orders",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get whole wishlist",
+      "filename": "get whole wishlist.bru",
+      "seq": 19,
+      "request": {
+        "url": "http://localhost:8082/api/wishlist",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "login user",
+      "filename": "login user.bru",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8082/api/auth/login",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"email\": \"ram@gmail.com\",\n  \"password\": \"aA@123456\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "place order",
+      "filename": "place order.bru",
+      "seq": 15,
+      "request": {
+        "url": "http://localhost:8082/api/orders",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "product 1",
+      "filename": "product 1.bru",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:8082/api/products",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"productName\": \"Electric Kettle\",\n  \"description\": \"1.8L stainless steel electric kettle with auto shut-off and boil-dry protection.\",\n  \"price\": 1199.0,\n  \"discount\": 150.0,\n  \"deliveryCharges\": 40.0,\n  \"avgRating\": 4,\n  \"sellerName\": \"KitchenWorld\"\n}\n",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "product 2",
+      "filename": "product 2.bru",
+      "seq": 5,
+      "request": {
+        "url": "http://localhost:8082/api/products",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"productName\": \"Ergonomic Office Chair\",\n  \"description\": \"Adjustable mesh chair with lumbar support and 360-degree swivel.\",\n  \"price\": 5899.0,\n  \"discount\": 899.0,\n  \"deliveryCharges\": 99.0,\n  \"avgRating\": 5,\n  \"sellerName\": \"FurniMart\"\n}\n",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "product by id",
+      "filename": "product by id.bru",
+      "seq": 8,
+      "request": {
+        "url": "http://localhost:8082/api/products/2",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "products by name",
+      "filename": "products by name.bru",
+      "seq": 7,
+      "request": {
+        "url": "http://localhost:8082/api/products?name",
+        "method": "GET",
+        "headers": [],
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "register user",
+      "filename": "register user.bru",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8082/api/auth/register",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"firstName\": \"ram\",\n  \"lastName\": \"sharma\",\n  \"email\": \"prathamesh@gmail.com\",\n  \"password\": \"123456\",\n  \"confirmPassword\": \"123456\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "update quantity",
+      "filename": "update quantity.bru",
+      "seq": 13,
+      "request": {
+        "url": "http://localhost:8082/api/carts",
+        "method": "PUT",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"productId\": 1,\n  \"quantity\": 3\n}",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "whole cart",
+      "filename": "whole cart.bru",
+      "seq": 12,
+      "request": {
+        "url": "http://localhost:8082/api/carts",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmF0aGFtZXNoMUBnbWFpbC5jb20iLCJpYXQiOjE3NTI4MjY5NjksImV4cCI6MTc1Mjk5OTc2OX0.5kmISL-Qpz-lvZKwYB358ZDboaVkqIBVi8_hjUih6s4"
+        }
+      },
+      "vars": {
+        "req": [
+          {
+            "name": "BASE_URL",
+            "value": "http://localhost:8082/api",
+            "enabled": true,
+            "local": false,
+            "uid": "5NVscKl0k4ggqOStu0YTf"
+          }
+        ]
+      }
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "megamart",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.0035181045532226562,
+    "filesCount": 19,
+    "presets": {
+      "requestType": "http",
+      "requestUrl": "http://localhost:8082/api/"
+    }
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "info": {
+    "name": "megamart",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "add to cart 2",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/carts",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "carts"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "add to cart",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/carts",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "carts"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": 1,\n  \"quantity\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "add to wishlist",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/wishlist/1",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "wishlist",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "all products",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/products/all",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "products",
+            "all"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "delete from wishlist",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/wishlist/1",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "wishlist",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "delete product by id",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/carts/1",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "carts",
+            "1"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "error register user",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "{{BASE_URL}}/auth/register",
+          "protocol": "",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "auth",
+            "register"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"prathamesh\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "get orders",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "get whole wishlist",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/wishlist",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "wishlist"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "login user",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"ram@gmail.com\",\n  \"password\": \"aA@123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "place order",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "product 1",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "products"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productName\": \"Electric Kettle\",\n  \"description\": \"1.8L stainless steel electric kettle with auto shut-off and boil-dry protection.\",\n  \"price\": 1199.0,\n  \"discount\": 150.0,\n  \"deliveryCharges\": 40.0,\n  \"avgRating\": 4,\n  \"sellerName\": \"KitchenWorld\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "product 2",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "products"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productName\": \"Ergonomic Office Chair\",\n  \"description\": \"Adjustable mesh chair with lumbar support and 360-degree swivel.\",\n  \"price\": 5899.0,\n  \"discount\": 899.0,\n  \"deliveryCharges\": 99.0,\n  \"avgRating\": 5,\n  \"sellerName\": \"FurniMart\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "product by id",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/products/2",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "products",
+            "2"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "products by name",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/products?name",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "products"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": ""
+            }
+          ],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "register user",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"ram\",\n  \"lastName\": \"sharma\",\n  \"email\": \"prathamesh@gmail.com\",\n  \"password\": \"123456\",\n  \"confirmPassword\": \"123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "update quantity",
+      "event": [],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/carts",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "carts"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": 1,\n  \"quantity\": 3\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "whole cart",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:8082/api/carts",
+          "protocol": "http",
+          "host": [
+            "localhost:8082"
+          ],
+          "path": [
+            "api",
+            "carts"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
